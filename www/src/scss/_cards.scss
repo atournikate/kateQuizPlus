@@ -1,0 +1,41 @@
+.box {
+  position: relative;
+  top: 20px;
+  margin-bottom: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .card {
+    max-width: 50vw;
+    color: #aff;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: center;
+
+    img {
+      max-width: 90%;
+      margin: auto;
+      border-radius: 5px;
+    }
+
+    h2 {
+      font-family: $big-font;
+      font-size: 5em;
+      color: $sec-color;
+      text-shadow: 2px 5px 5px $tert-color;
+    }
+
+    h3 {
+      font-family: $prim-font !important;
+      font-size: 4rem;
+      color: $prim-color;
+    }
+  }
+  .options {
+    label {
+      color: $sec-color !important;
+      font-family: $sec-font;
+    }
+  }
+}

@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Alef&family=Luckiest+Guy&family=Rock+Salt&family=RocknRoll+One&display=swap");
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #3a534c;
+  color: #40af8e;
+  font-family: "RocknRoll One", sans-serif;
+  height: 7.5rem;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.header h1 {
+  color: #fa8072;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 7.5rem;
+  text-shadow: 2px 5px 5px #313a46;
+  text-align: center;
+}
+.header nav {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+.header nav li {
+  margin: 10px;
+  padding: 12px;
+  background-color: #4f7167;
+  border-radius: 5px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  margin-top: 100px;
+  width: 100%;
+  background-color: #3a534c;
+  color: #40af8e;
+}
+
+.box {
+  position: relative;
+  top: 20px;
+  margin-bottom: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box .card {
+  max-width: 50vw;
+  color: #aff;
+  padding: 20px;
+  border-radius: 10px;
+  justify-content: center;
+}
+.box .card img {
+  max-width: 90%;
+  margin: auto;
+  border-radius: 5px;
+}
+.box .card h2 {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 5em;
+  color: #fa8072;
+  text-shadow: 2px 5px 5px #3c506b;
+}
+.box .card h3 {
+  font-family: "Rock Salt", cursive !important;
+  font-size: 4rem;
+  color: #40af8e;
+}
+.box .options label {
+  color: #fa8072 !important;
+  font-family: "RocknRoll One", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font: "Rock Salt", cursive;
+  color: #40af8e;
+}
+
+body {
+  background-image: url("/images/ghostShark.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body a {
+  text-decoration: none;
+  color: #fa8072;
+}
+body a:hover {
+  color: #ffba7a;
+  transform: scale(1.1);
+}
+
+.container {
+  position: relative;
+  top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .main {
+  min-width: 50vw;
+}
+.container h2 {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 5em;
+}
+.container h3 {
+  font-family: "RocknRoll One", sans-serif;
+  font-size: 1.5em;
+  color: #ffba7a;
+}
+
+/*# sourceMappingURL=style.css.map */
