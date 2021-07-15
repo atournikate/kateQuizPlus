@@ -7,11 +7,13 @@
   justify-content: center;
 
   .card {
-    max-width: 50vw;
+    max-width: 60vw;
     color: #aff;
     padding: 20px;
     border-radius: 10px;
     justify-content: center;
+    background-color: $prim-light;
+    box-shadow: 5px 5px 10px $tert-dark;
 
     img {
       max-width: 90%;
@@ -28,14 +30,33 @@
 
     h3 {
       font-family: $prim-font !important;
-      font-size: 4rem;
+      font-size: 2rem;
       color: $prim-color;
+      text-shadow: 3px 2px 5px darken($prim-light, 25%);
     }
   }
   .options {
     label {
       color: $sec-color !important;
       font-family: $sec-font;
+    }
+
+    .btn {
+      display: inline-block;
+      border-radius: 5px;
+      padding: 5px;
+      margin: auto;
+      font-family: $big-font;
+      font-size: 2rem;
+      color: $sec-color;
+      background-color: $sec-light;
+      box-shadow: 2px 5px 5px $tert-dark;
+
+      &:hover {
+        color: $sec-light;
+        background-color: $sec-color;
+        transition-timing-function: ease-in;
+      }
     }
   }
 }

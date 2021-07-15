@@ -35,9 +35,9 @@
     <img src="<?php echo $pageData['imgURL']?>"><br>
                 
                 <?php
-                    echo '<a href="/index.php">' . $pageData['title'] . '</a><br>';
+                    echo '<h1>' . $pageData['title'] . '</h1>';
 
-                    echo $pageData['text'] . " ";
+                    echo '<h3>' . $pageData['text'] . " ";
                     
                         if ($percentage == 0) {
                             echo $pageDate['feedback_0'];
@@ -62,6 +62,8 @@
                         } elseif ($percentage == 100) {                       
                             echo $pageData['feedback_100'];
                         }
+
+                    echo '</h3>';
                     echo '<p>You have answered ' . $_SESSION['achievedPoints'] . ' out of ' . count($numQuestions) . ' correctly.</p>';
                     echo '<br><a href="/index.php">Return Home</a>';
                     session_destroy();
@@ -69,3 +71,6 @@
             </div>
         </div>
 
+        <?php
+    require_once 'footer.php';
+    ?>

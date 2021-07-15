@@ -36,7 +36,7 @@
         echo '<h3>' . $pageData['text'] . '</h3>'; 
         ?>
 
-        <div class="options">
+        <div class="options mx-auto">
 
             <form action="<?php echo $pageData['nextAction']; ?>" method="post">
 
@@ -58,7 +58,7 @@
 
             <input type="hidden" name="nextQuestionID" 
                 value="<?php echo $pageData['nextQuestionID']; ?>">
-            <input type="submit" value="NEXT">
+            <input type="submit" class="btn d-grid col-12" value="NEXT">
 
             </form>
 

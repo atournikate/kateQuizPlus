@@ -14,13 +14,6 @@
   align-items: center;
   justify-content: space-between;
 }
-.header h1 {
-  color: #fa8072;
-  font-family: "Luckiest Guy", cursive;
-  font-size: 7.5rem;
-  text-shadow: 2px 5px 5px #313a46;
-  text-align: center;
-}
 .header nav {
   display: flex;
   align-items: baseline;
@@ -44,42 +37,6 @@
   width: 100%;
   background-color: #3a534c;
   color: #40af8e;
-}
-
-.box {
-  position: relative;
-  top: 20px;
-  margin-bottom: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.box .card {
-  max-width: 50vw;
-  color: #aff;
-  padding: 20px;
-  border-radius: 10px;
-  justify-content: center;
-}
-.box .card img {
-  max-width: 90%;
-  margin: auto;
-  border-radius: 5px;
-}
-.box .card h2 {
-  font-family: "Luckiest Guy", cursive;
-  font-size: 5em;
-  color: #fa8072;
-  text-shadow: 2px 5px 5px #3c506b;
-}
-.box .card h3 {
-  font-family: "Rock Salt", cursive !important;
-  font-size: 4rem;
-  color: #40af8e;
-}
-.box .options label {
-  color: #fa8072 !important;
-  font-family: "RocknRoll One", sans-serif;
 }
 
 * {
@@ -117,6 +74,13 @@ body a:hover {
 .container .main {
   min-width: 50vw;
 }
+.container h1 {
+  color: #fa8072;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 7.5rem;
+  text-shadow: 2px 5px 5px #313a46;
+  text-align: center;
+}
 .container h2 {
   font-family: "Luckiest Guy", cursive;
   font-size: 5em;
@@ -125,6 +89,61 @@ body a:hover {
   font-family: "RocknRoll One", sans-serif;
   font-size: 1.5em;
   color: #ffba7a;
+}
+
+.box {
+  position: relative;
+  top: 20px;
+  margin-bottom: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box .card {
+  max-width: 60vw;
+  color: #aff;
+  padding: 20px;
+  border-radius: 10px;
+  justify-content: center;
+  background-color: #a9e0d0;
+  box-shadow: 5px 5px 10px #313a46;
+}
+.box .card img {
+  max-width: 90%;
+  margin: auto;
+  border-radius: 5px;
+}
+.box .card h2 {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 5em;
+  color: #fa8072;
+  text-shadow: 2px 5px 5px #3c506b;
+}
+.box .card h3 {
+  font-family: "Rock Salt", cursive !important;
+  font-size: 2rem;
+  color: #40af8e;
+  text-shadow: 3px 2px 5px #4bbe9d;
+}
+.box .options label {
+  color: #fa8072 !important;
+  font-family: "RocknRoll One", sans-serif;
+}
+.box .options .btn {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 5px;
+  margin: auto;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 2rem;
+  color: #fa8072;
+  background-color: #ffba7a;
+  box-shadow: 2px 5px 5px #313a46;
+}
+.box .options .btn:hover {
+  color: #ffba7a;
+  background-color: #fa8072;
+  transition-timing-function: ease-in;
 }
 
 /*# sourceMappingURL=style.css.map */

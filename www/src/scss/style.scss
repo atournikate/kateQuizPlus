@@ -1,7 +1,6 @@
 @import "variables";
 @import "header";
 @import "footer";
-@import "cards";
 
 // base
 * {
@@ -46,6 +45,14 @@ body {
     min-width: 50vw;
   }
 
+  h1 {
+    color: $sec-color;
+    font-family: $big-font;
+    font-size: 7.5rem;
+    text-shadow: 2px 5px 5px $tert-dark;
+    text-align: center;
+  }
+
   h2 {
     font-family: $big-font;
     font-size: 5em;
@@ -57,3 +64,4 @@ body {
     color: $sec-light;
   }
 }
+@import "cards";
