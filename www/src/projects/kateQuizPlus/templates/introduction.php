@@ -1,12 +1,14 @@
 <?php
-    // start session and initialize achieved number of points
-    session_start();
-    // Preset path to include folder 
-    set_include_path($_SERVER['DOCUMENT_ROOT'] . '/include');
+    include '../config.php';
 
-    // Page includes
-    include 'auth.php';
-    include 'db-access.php';
+    // start session and initialize achieved number of points
+    // session_start();
+    // // Preset path to include folder 
+    // set_include_path($_SERVER['DOCUMENT_ROOT'] . '/php');
+
+    // // Page includes
+    // include 'auth.php';
+    // include 'db-access.php';
     //include 'db-functions.php';
 
     if (isset($_GET['quizID'])) {
@@ -27,7 +29,7 @@
 
 
             <?php 
-                echo '<img src="/images/' . $pageData['imgURL'] . '"><br>';
+                echo '<img src="../images/' . $pageData['imgURL'] . '"><br>';
                 echo '<h2>' . $pageData['title'] . '</h2>'; 
              ?>
 

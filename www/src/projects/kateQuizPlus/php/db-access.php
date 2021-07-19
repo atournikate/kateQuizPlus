@@ -8,7 +8,7 @@
     define('DB_HOST', getenv('DB_HOST'));
 
     //switch tracing on/off 
-    define('TRACE_DB_ACCESS', false);
+    //define('TRACE_DB_ACCESS', false);
 
     //creates or reuses a single PDO connection object
     function DBConnection() {

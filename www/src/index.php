@@ -1,22 +1,38 @@
 <?php
-    // start session and initialize achieved number of points
-    session_start();
+include 'php/auth.php';
 
-    //print '<br><br><br>' . $_SERVER['DOCUMENT_ROOT'] . '<br>';
-    // Preset path to include folder 
-    set_include_path($_SERVER['DOCUMENT_ROOT'] . '/include');
+function addLinks()
+{
+  $links = scandir("projects/");             // creating an array with all items(files and folders) in the choosen folder(path) including the . and ..
+  $links = array_splice($links, 2, count($links));  // get rid of the . and ..
+  $links = array_values($links);        // reseting the indexes starting from 0
 
-    // Page includes
-    include 'auth.php';
-    include 'db-access.php';
-       
-    require_once 'header.php';
+  foreach ($links as $i => $value) {
+    if (file_exists('projects/' . $value . '/info.php')) {
+      require_once 'projects/' . $value . '/info.php';
+      //echo "index = " . $i . " / value = " . $value . "<br>";
+      echo '<a href="/projects/' . $value . '/' . $projData["StartPage"] . '">' . $projData["ProjectName"] . '</a><br>';
+    }
+  }
+}
+
+
 ?>
 
-            <?php 
-                echo '<h3>Try out our first and only</h3><br><h2><a href="/php/introduction.php">Animal Quiz</a></h2>';
-            ?>
-        
-    <?php
-    require_once 'footer.php';
-    ?>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+  <div class="bgimg-1">
+    <div class="caption">
+      <span class="border"><?php addLinks(); ?></span>
+    </div>
+  </div>
+</body>
+
+</html>

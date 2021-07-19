@@ -1,0 +1,22 @@
+.bgimg-1 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: $bg-color;
+  color: $prim-color;
+  font-family: $sec-font;
+  height: 7.5rem;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  align-items: center;
+  justify-content: space-between;
+
+  h2 {
+    font-family: $big-font;
+    font-size: 5em;
+    color: $sec-color;
+    text-shadow: 2px 5px 5px $tert-color;
+  }
+}

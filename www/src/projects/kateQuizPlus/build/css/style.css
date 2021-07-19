@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Alef&family=Luckiest+Guy&family=Rock+Salt&family=RocknRoll+One&display=swap");
-.header {
+.bgimg-1 {
   position: absolute;
   top: 0;
   width: 100%;
@@ -14,20 +14,11 @@
   align-items: center;
   justify-content: space-between;
 }
-.header nav {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-.header nav ul {
-  display: flex;
-  list-style-type: none;
-}
-.header nav li {
-  margin: 10px;
-  padding: 12px;
-  background-color: #4f7167;
-  border-radius: 5px;
+.bgimg-1 h2 {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 5em;
+  color: #fa8072;
+  text-shadow: 2px 5px 5px #3c506b;
 }
 
 .footer {
@@ -51,7 +42,7 @@ html {
 }
 
 body {
-  background-image: url("/images/ghostShark.jpeg");
+  background-image: url("../images/ghostShark.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -66,12 +57,10 @@ body a:hover {
 
 .container {
   position: relative;
-  top: 150px;
+  top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.container .main {
   min-width: 50vw;
 }
 .container h1 {
@@ -90,6 +79,11 @@ body a:hover {
   font-size: 1.5em;
   color: #ffba7a;
 }
+.container img {
+  max-width: 90%;
+  margin: auto;
+  border-radius: 5px;
+}
 
 .box {
   position: relative;
@@ -100,7 +94,7 @@ body a:hover {
   justify-content: center;
 }
 .box .card {
-  max-width: 60vw;
+  max-width: 50vw;
   color: #aff;
   padding: 20px;
   border-radius: 10px;

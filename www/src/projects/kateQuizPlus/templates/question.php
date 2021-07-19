@@ -1,12 +1,14 @@
 <?php
-    // start session and initialize achieved number of points
-    session_start();
-    // Preset path to include folder 
-    set_include_path($_SERVER['DOCUMENT_ROOT'] . '/include');
 
-    // Page includes
-    include 'auth.php';
-    include 'db-access.php';
+    include '../config.php';
+    // // start session and initialize achieved number of points
+    // session_start();
+    // // Preset path to include folder 
+    // set_include_path($_SERVER['DOCUMENT_ROOT'] . '/php');
+
+    // // Page includes
+    // include 'auth.php';
+    // include 'db-access.php';
     //include 'db-functions.php';
 
     if (isset($_POST['nextQuestionID'])) {
@@ -36,8 +38,8 @@
         echo '<h3>' . $pageData['text'] . '</h3>'; 
         ?>
 
-        <div class="options mx-auto">
 
+<div class="options mx-auto">
             <form action="<?php echo $pageData['nextAction']; ?>" method="post">
 
             <input type="radio" id="answer0" name="radio" 

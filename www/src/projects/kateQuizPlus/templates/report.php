@@ -1,12 +1,13 @@
 <?php
+    include '../config.php';
     // start session and initialize achieved number of points
-    session_start();
-    // Preset path to include folder 
-    set_include_path($_SERVER['DOCUMENT_ROOT'] . '/include');
+    // session_start();
+    // // Preset path to include folder 
+    // set_include_path($_SERVER['DOCUMENT_ROOT'] . '/php');
 
-    // Page includes
-    include 'auth.php';
-    include 'db-access.php';
+    // // Page includes
+    // include 'auth.php';
+    // include 'db-access.php';
     //include 'db-functions.php';
 
     if (isset($_GET['quizID'])) {
@@ -29,7 +30,7 @@
     $percentage = ($_SESSION['achievedPoints'] / count($numQuestions) * 100);
     echo $percentage . "%! <br>";
 
-    require_once 'header.php'; 
+    require_once 'quiz_header.php'; 
     ?>
 
     <img src="<?php echo $pageData['imgURL']?>"><br>
