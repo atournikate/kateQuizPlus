@@ -2,10 +2,10 @@
 
 
 //define DB constants
-    define('DB_NAME', getenv('DB_NAME'));
-    define('DB_USER', getenv('DB_USER'));
-    define('DB_PASSWORD', getenv('DB_PASSWORD'));
-    define('DB_HOST', getenv('DB_HOST'));
+    // define('DB_NAME', getenv('DB_NAME'));
+    // define('DB_USER', getenv('DB_USER'));
+    // define('DB_PASSWORD', getenv('DB_PASSWORD'));
+    // define('DB_HOST', getenv('DB_HOST'));
 
     //switch tracing on/off 
     //define('TRACE_DB_ACCESS', false);
@@ -41,7 +41,7 @@
     //Use !== false; strpos() may return Boolean or number >= 0
     //'strpos' or 'string position'
     //strpos() can return false, 0 ... N (or any number > 0), so we have to use not false
-    if (strpos($_SERVER[HTTP_HOST], 'localhost:') !== false) {
+    if (strpos($_SERVER['HTTP_HOST'], 'localhost:') !== false) {
         //DB runs in local Docker container: localhost
         define('DB_NAME', getenv('DB_NAME'));
         define('DB_USER', getenv('DB_USER'));
@@ -54,14 +54,14 @@
         Hostname: ipiluwig_ck.mysql.db.internal
         MySQL version: 10.3-MariaDB
 
-        DB: ipiluwig_ck
-        User: ipiluwig_01
-        Pwd: mhkcT6BUZymW6e
+        DB: ipiluwig_
+        User: ipiluwig_
+        Pwd: 
         */
         define('DB_HOST', 'ipiluwig.mysql.db.internal');
-        define('DB_NAME', 'ipiluwig_@@');
-        define('DB_USER', 'ipiluwig_##');
-        define('DB_PASSWORD', '...');
+        define('DB_NAME', 'ipiluwig_kt');
+        define('DB_USER', 'ipiluwig_17');
+        define('DB_PASSWORD', 'G30logyR@x');
     }
 
     function introductionDataFromDB($quizID) {
