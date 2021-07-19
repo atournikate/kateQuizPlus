@@ -18,11 +18,50 @@
 
         //php data objects extension (PDO) requires
         //https://www.php.net/manual/book/pdo/php
-        $connection = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8', 
-        DB_USER, 
-        DB_PASSWORD);
+        try { //versuch mal zu
+            $connection = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8', 
+            DB_USER, 
+            DB_PASSWORD);
+            $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (PDOException $e) { 
+            // oops - das hat nicht geklappt, 
+            //names (type of exception $variable for exception)
+            echo "<p>DB connection failed: " . $e->getMessage() . '</p>';
+            echo 'HTTP_HOST = ' . $_SERVER['HTTP_HOST'] . '<br>';
+            echo 'DB_NAME = ' . DB_NAME . '<br>';
+            echo 'DB_USER = ' . DB_USER . '<br>';
+            echo 'DB_PASSWORD = ' . DB_PASSWORD . '<br>';
+            echo 'DB_HOST = ' . DB_HOST . '<br>';
+            exit;
+        }
 
         return $connection;
+    }
+
+    //Use !== false; strpos() may return Boolean or number >= 0
+    //'strpos' or 'string position'
+    //strpos() can return false, 0 ... N (or any number > 0), so we have to use not false
+    if (strpos($_SERVER[HTTP_HOST], 'localhost:') !== false) {
+        //DB runs in local Docker container: localhost
+        define('DB_NAME', getenv('DB_NAME'));
+        define('DB_USER', getenv('DB_USER'));
+        define('DB_PASSWORD', getenv('DB_PASSWORD'));
+        define('DB_HOST', getenv('DB_HOST'));
+    } else {
+        /* 
+        HOSTPOINT DB (ipiluwig_ck) ACCESS
+
+        Hostname: ipiluwig_ck.mysql.db.internal
+        MySQL version: 10.3-MariaDB
+
+        DB: ipiluwig_ck
+        User: ipiluwig_01
+        Pwd: mhkcT6BUZymW6e
+        */
+        define('DB_HOST', 'ipiluwig.mysql.db.internal');
+        define('DB_NAME', 'ipiluwig_@@');
+        define('DB_USER', 'ipiluwig_##');
+        define('DB_PASSWORD', '...');
     }
 
     function introductionDataFromDB($quizID) {
