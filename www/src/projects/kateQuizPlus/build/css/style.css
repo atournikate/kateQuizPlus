@@ -42,7 +42,7 @@ html {
 }
 
 body {
-  background-image: url("../images/ghostShark.jpeg");
+  background-image: url("../../images/ghostShark.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -79,6 +79,10 @@ body a:hover {
   font-size: 1.5em;
   color: #ffba7a;
 }
+.container p {
+  color: #3c506b;
+  font-size: 1.5em;
+}
 .container img {
   max-width: 90%;
   margin: auto;
@@ -94,7 +98,7 @@ body a:hover {
   justify-content: center;
 }
 .box .card {
-  max-width: 50vw;
+  max-width: 60vw;
   color: #aff;
   padding: 20px;
   border-radius: 10px;
