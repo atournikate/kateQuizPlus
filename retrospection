@@ -1,1 +1,3 @@
-
+In retrospect, I think it would have been good if I had a better understanding of how Docker works. It still seems shrouded in mystery to me, somehow just skirting around the edge of my understanding. That actually caused me the most anguish.
+One thing I had reiterated and finally learned was how to read the error lines more carefully. Usually it ended up just being a misspelling or a dropped comma, but now errors don't concern me so much. I know how to tell if something is or is not working with var_dump and echos. 
+It was fun putting together a quiz, and I think I would like to put my newfound skills into practice again, maybe do another one from scratch to see if I can understand it all.
