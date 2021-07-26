@@ -1,4 +1,4 @@
-<?php
+<?php //this is an associative array
 $projData = [
     "ProjectName" => "Kate's Critter Quiz",
     "Author" => "Kate Ebensteiner",
