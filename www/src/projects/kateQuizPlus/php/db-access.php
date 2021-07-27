@@ -130,12 +130,16 @@
 
     function sqlInsert() {
         $stmt = DBConnection()->prepare("INSERT INTO Feedback (name, email, text) VALUES (:name, :email, :text)");
-        $stmt->bindParam(':name', $_POST['userName']);
+        $stmt->bindParam(':name', $_POST['name']);
         $stmt->bindParam(':email', $_POST['email']);
         $stmt->bindParam(':text', $_POST['text']);
         $stmt->execute();
 
-        echo "<p>New message successfully created! Thanks for playing!</p>";
+        if (DBConnection() == true) {
+            echo "<p>New message successfully created! Thanks for playing!</p>";
+        } else {
+            echo "Oops! Something went wrong!";
+        }
     }
 
 

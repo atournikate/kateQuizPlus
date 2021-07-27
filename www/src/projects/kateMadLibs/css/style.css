@@ -1,0 +1,43 @@
+body {
+  background-color: #bf96ce;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  line-height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.madLibs {
+  margin: 100px;
+  padding: 50px;
+  align-items: center;
+  background-color: #522464;
+  border-radius: 5px;
+}
+.madLibs h1 {
+  font-family: "Fontdiner Swanky", cursive;
+  color: #ffb765;
+  -webkit-text-fill: #ffb765;
+  -webkit-text-stroke: 2px #d41062;
+  text-shadow: 3px 5px 6px #291906;
+  font-size: 56px;
+  letter-spacing: 10px;
+}
+.madLibs .game {
+  font-family: "Inconsolata", monospace;
+  color: #00c086;
+  font-size: 26px;
+}
+
+.madLibs input {
+  height: 26px;
+  max-width: 200px;
+  font-size: 1.2rem;
+}
+.madLibs .story {
+  font-family: "Shadows Into Light Two", cursive;
+  color: #c4f0e3;
+  font-size: 3rem;
+  line-height: 80px;
+}

@@ -1,0 +1,25 @@
+
+.madLibs {
+    background-color: $purple;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    line-height: 10px;
+
+  h1 {
+    font: $title-font;
+    color: $green;
+    text-shadow: 5px 6px 6px $brown;
+    font-size: 28px;
+  }
+
+  .game {
+    font: $data-font;
+    color: $green;
+  }
+
+  .story {
+    font: $story-font;
+    color: $ltgreen;
+  }
+}

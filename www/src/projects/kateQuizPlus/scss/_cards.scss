@@ -9,7 +9,7 @@
   .card {
     min-width: 50vw;
     max-width: 80vw;
-    color: #aff;
+    color: #b8d4d4;
     padding: 20px;
     border-radius: 10px;
     justify-content: center;
@@ -68,23 +68,6 @@
 
   a {
     text-decoration: none;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    label {
-      margin-top: 10px;
-    }
-
-    input {
-      width: 100%;
-    }
-    
-    .message {
-      height: 200px;
-      align-content: flex-start;
-    }
   }
 
 
