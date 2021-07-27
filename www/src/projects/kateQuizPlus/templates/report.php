@@ -73,7 +73,8 @@
 
                     echo '</h3>';
                     echo '<p>You have answered ' . $_SESSION['achievedPoints'] . ' out of ' . count($numQuestions) . ' correctly.</p>';
-                    echo '<br><a href="/index.php">Return Home</a>';
+                    echo '<br><a class="btn d-grid col-6" href="/index.php">Return Home</a><br>';
+                    echo '<p>Or leave us some </p> <a class="btn d-grid col-6" href="feedback.php">Feedback</a>';
                     session_destroy();
                 ?></span>
             </div>

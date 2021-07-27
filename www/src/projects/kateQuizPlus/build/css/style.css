@@ -66,17 +66,17 @@ body a:hover {
 .container h1 {
   color: #fa8072;
   font-family: "Luckiest Guy", cursive;
-  font-size: 7.5rem;
+  font-size: 6vw;
   text-shadow: 2px 5px 5px #313a46;
   text-align: center;
 }
 .container h2 {
   font-family: "Luckiest Guy", cursive;
-  font-size: 5em;
+  font-size: 5vw;
 }
 .container h3 {
   font-family: "RocknRoll One", sans-serif;
-  font-size: 1.5em;
+  font-size: 3vw;
   color: #ffba7a;
 }
 .container p {
@@ -98,7 +98,8 @@ body a:hover {
   justify-content: center;
 }
 .box .card {
-  max-width: 60vw;
+  min-width: 50vw;
+  max-width: 80vw;
   color: #aff;
   padding: 20px;
   border-radius: 10px;
@@ -127,7 +128,7 @@ body a:hover {
   color: #fa8072 !important;
   font-family: "RocknRoll One", sans-serif;
 }
-.box .options .btn {
+.box .btn {
   display: inline-block;
   border-radius: 5px;
   padding: 5px;
@@ -138,10 +139,27 @@ body a:hover {
   background-color: #ffba7a;
   box-shadow: 2px 5px 5px #313a46;
 }
-.box .options .btn:hover {
+.box .btn:hover {
   color: #ffba7a;
   background-color: #fa8072;
   transition-timing-function: ease-in;
+}
+.box a {
+  text-decoration: none;
+}
+.box form {
+  display: flex;
+  flex-direction: column;
+}
+.box form label {
+  margin-top: 10px;
+}
+.box form input {
+  width: 100%;
+}
+.box form .message {
+  height: 200px;
+  align-content: flex-start;
 }
 
 /*# sourceMappingURL=style.css.map */

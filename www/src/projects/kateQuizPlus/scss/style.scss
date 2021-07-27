@@ -13,9 +13,9 @@ html {
   font: $prim-font;
   color: $prim-color;
 
-  // @media (max-width: 1200px) {
-  //   font-size: calc(10px + 0.2vw);
-  // }
+  //  @media (max-width: 1200px) {
+  //    font-size: calc(10px + 0.2vw);
+  //  }
 }
 
 body {
@@ -45,19 +45,19 @@ body {
   h1 {
     color: $sec-color;
     font-family: $big-font;
-    font-size: 7.5rem;
+    font-size: 6vw;
     text-shadow: 2px 5px 5px $tert-dark;
     text-align: center;
   }
 
   h2 {
     font-family: $big-font;
-    font-size: 5em;
+    font-size: 5vw;
   }
 
   h3 {
     font-family: $sec-font;
-    font-size: 1.5em;
+    font-size: 3vw;
     color: $sec-light;
   }
 

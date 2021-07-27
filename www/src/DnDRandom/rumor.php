@@ -5,7 +5,7 @@ $sources = [
     "In order to frighten their children, locals tell an old tale of a",
     "In the corner of the taverns sits a group of folk, pale and shaking, whispering wretchedly about a",
     "Legend speaks of a",
-    "A seemingly senile elder wanters around town muttering of a",
+    "A seemingly senile elder wanders around town muttering of a",
     "Etched into a stone is the warning of a",
     "In the hand of a withered corpse found along the roadside is a map with a drawing of a",
     "Nailed to a tree is a small note with a warning to all about a",
@@ -21,17 +21,17 @@ $adjectives = [
     "ruined",
     "unfinished",
     "hidden",
-    "noxious",
+    "mysterious",
     "strange",
     "living",
-    "shapeshifting",
+    "mercurial",
     "overgrown",
     "seemingly ordinary",
     "enchanted",
     "strangely alluring",
     "growling",
     "singing",
-    "ever burning",
+    "fiery",
     "floating",
     "blighted"
 ];
@@ -78,11 +78,11 @@ $places = [
     "gate",
     "shrine",
     "door",
-    "hatch",
-    "ladder",
+    "airship",
+    "causeway",
     "bridge",
     "bedroll",
-    "tent",
+    "pavilion",
     "tree house",
     "log cabin",
     "hut",
@@ -102,7 +102,7 @@ $places = [
     "field",
     "property",
     "area",
-    "row of townhouses",
+    "prison",
     "lodge",
     "lumber camp",
     "fisher’s hut",
@@ -140,26 +140,26 @@ $places = [
 ];
 
 $descriptors = [
-    "long-forgotten",
-    "long-abandoned",
-    "with the markings of a terrible beast",
-    "strewn with the remnants of a terrible battle",
-    "covered in etchings of a dark ritual",
-    "glowing with an aura of silvery light",
-    "said to be owned by an elderly mage",
-    "said to be the site of a terrible crime",
-    "said to be the site of a spell going terribly wrong",
-    "letting off the feeling of a strange presence",
-    "carved with runes or symbols like none have ever seen",
-    "said to be home to evil spirits",
-    "said to be corrupted by dark forces",
-    "said to house something truly abnormal",
-    "said to hold a cursed item",
-    "said to be host to a masked ball at the solstice moons",
-    "said to be a fantastic place to visit",
-    "said to be a place of madness",
-    "covered in eldritch symbols",
-    "said to be place from where no one ever returns"
+    "long-forgotten,",
+    "long-abandoned,",
+    "marked by the presence of a terrible beast,",
+    "strewn with the remnants of a terrible battle,",
+    "covered in etchings of a dark ritual,",
+    "glowing with an aura of silvery light,",
+    "said to be owned by an elderly mage,",
+    "said to be the site of a terrible crime,",
+    "said to be the site of a spell going terribly wrong,",
+    "letting off the feeling of a strange presence,",
+    "carved with runes or symbols like none have ever seen,",
+    "said to be home to evil spirits,",
+    "said to be corrupted by dark forces,",
+    "said to house something truly abnormal,",
+    "said to hold a cursed item,",
+    "said to be host to a masked ball at the solstice moons,",
+    "said to be a fabulous place to visit,",
+    "said to be a place of madness,",
+    "covered in eldritch symbols,",
+    "said to be place from where no one ever return,s"
 ];
 
 $areas = [
@@ -297,6 +297,12 @@ $action = $actions[rand(0, $actLength)];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DnD Rumor Mill</title>
     <style>
+
+        body {
+            background-image: url("/images/parchment.jpg");
+            background-color: #d6c68d;
+            background-repeat: no-repeat;
+        }
         .rumor {
             margin-top: 50px;
             width: 60vw;
@@ -304,10 +310,10 @@ $action = $actions[rand(0, $actLength)];
             padding: 50px;
             margin-left: auto;
             margin-right: auto;
-            background-color: #5e8278;
-            color: #c2fffc;
-            font-family: "Helvetica Neue";
-            font-size: 24px;
+            
+            color: #380906;
+            font-family: "Loved by the King";
+            font-size: 48px;
         }
     </style>
 </head>
